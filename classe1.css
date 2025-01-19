@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Courier;
+    background-color: #252424;
+    color: #fff;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+
+nav .logo {
+    
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav .logo span {
+    color: orange;
+}
+
+.nav-links {
+    font-family: Courier;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.nav-links li a:hover {
+    color: #e4713c;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links li a:after {
+    content: "";
+    position: absolute;
+    background-color: #e4713c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover:after {
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.social-icons {
+    margin-left: 1530px;
+    gap: 10px;
+    display: flex;
+}
+
+.social-icons a {
+    margin-top: 6px;
+    margin-left: 12px;
+    
+}
+
+.social-icons a i{
+    font-size: 25px;
+    color: white;
+   
+    
+}
+.banner {
+    background-image: url('../img/bodypumpb.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 100;
+
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: -50px;
+}
+
+.banner p a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;  
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #e4713c;  
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.class-selection{
+    background-color: #010814;
+    padding: 50px;
+}
+
+.class-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-img img{
+    border-radius: 10px;
+    height: 90%;
+    width: 100%;
+}
+
+.class-name{
+    padding: 80px;
+    text-align: right; 
+    transform: translateX(-100%); 
+    transition: transform 0.5s, opacity 0.5s ; 
+    opacity: 0;
+    
+}
+
+.class-name h3 {
+    font-family: Century Gothic;
+    font-size: 50px;
+    color: #c77223;
+    font-family: Georgia;
+    text-align: center;
+    line-height: 2cm;
+}
+
+.class-name p {
+
+    font-family: Century Gothic;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Georgia;
+    line-height: 0.8cm;
+    max-width: 1000px;
+    
+    
+}
+
+.class-name h3, .class-name p {
+    text-align: left; 
+}
+
+.class-name.scrolled {
+    transform: translateX(0); 
+    opacity: 1; 
+}
+
+.classinfo-container{
+    display: flex;
+    background-color: #010814;
+    text-align: left;
+    padding: 50px;
+    line-height: 25px;
+    justify-content: space-between;
+}
+
+.classinfo.scrolled{
+    transform: translateX(0); 
+    opacity: 1; 
+}
+
+.classinfo{
+    padding: 20px;
+    transition: transform 0.5s, opacity 0.5s ; 
+    opacity: 0;
+}
+
+
+.classinfo h2{
+    font-family:  Rockwell;
+    font-size: 40px;
+    color: #c77223;
+    line-height: 50px;
+}
+
+.classinfo h3{
+    font-family:  Rockwell;
+    font-size: 23px;
+    color: #c77223;
+    line-height: 50px;
+}
+
+.classinfo p{
+    font-family:Verdana;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.classinfo-img img{
+    margin-top: 100px;
+    height: auto;
+    width: auto;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background-color: #000;
+    padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+
+.pricing {
+    background-color:  #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing h2 {
+    color: orange;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-box {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+    transition: background-color 0.3s, color 0.3;
+}
+
+
+.pricing-box:hover {
+    transform: translateY(-10px);
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+.pricing-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.pricing-box h4 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    color: rgb(209, 138, 6);
+}
+
+.pricing-box p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-box ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pricing-box ul li {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.btn-enroll {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-enroll:hover {
+    background-color: #ff6600;
+}
+
+
+footer {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background-color: #000;
+    padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-item .icon {
+    font-size: 30px;
+    color: #ff5500;
+    margin-right: 15px;
+}
+
+/*  footer */
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer-brand {
+    width: 30%;
+}
+
+.footer-brand h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer-brand h2 span {
+    color: #ff5500;
+}
+
+.footer-brand p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #be4848;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom i {
+    color: #ff5500;
+}
+
+.class-name button{
+    font-family: "Lucida Console";
+    font-weight: bold;
+    background-color: #a00b0b;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.class-name button a{
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Show Dropdown Menu */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    font-family: Courier;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color:transparent;
+}
+.dropbtn{
+    font-family: Courier;
+    font-size: 24px;
+    width: 110px;
+    height: 45px;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+
